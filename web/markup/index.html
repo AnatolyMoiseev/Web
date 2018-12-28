@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>lab</title>
+</head>
+<body>
+<div class="pos-f-t shadow">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-info">
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-info">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><div class="text-light">Текущие турниры</div></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><div class="text-light">Мои турниры</div></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><div class="text-light">Прогнозы</div></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><div class="text-light">О нас</div></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="float-right text-light">
+                        <div class="links">
+                            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#exampleModal">Вход</a>
+                            <a class="navbar-brand" href="#" data-toggle="modal" data-target="#exampleModal1">Регистрация</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="shadow-lg mb-5 bg-white rounded">
+        <nav class="navbar navbar-dark bg-info">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="float-right text-light">
+                <h3><strong>BSTU </strong>Tournament Statistics</h3>
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row background">
+        <div class="col-2">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active bg-info">
+                    <strong>Список турниров</strong>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Турнир памяти героя социалистического труда И.И.Пенкова</a>
+                <a href="#" class="list-group-item list-group-item-action">Белгородский областной чемпионат по футболу</a>
+                <a href="#" class="list-group-item list-group-item-action">Всеросийский чемпионат по волейболу среди ветеранов</a>
+                <a href="#" class="list-group-item list-group-item-action">Первенство России среди команд молодежного состава</a>
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="mx-auto" style="width: 800px;">
+                <h2>Турнирная таблица</h2>
+            </div>
+            <div class="mx-auto" style="width: 800px;">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Команда</th>
+                        <th>Всего игр</th>
+                        <th>Побед</th>
+                        <th>Поражений</th>
+                        <th>Ничьих</th>
+                        <th>Очков</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Альфа</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Крета</td>
+                        <td>8</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>Сибериус</td>
+                        <td>9</td>
+                        <td>6</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <td>12</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mx-auto" style="width: 100px;">
+                <h2>Итоги</h2>
+            </div>
+
+            <div class="mx-auto" style="width: 300px;">
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>1 место</th>
+                        <th>2 место</th>
+                        <th>3 место</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Вход</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Адрес эл.почты</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Пароль</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                    </div>
+                    <button type="submit" class="btn btn-info">Войти</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Регистрация</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleName">Имя пользователя</label>
+                        <input type="text" class="form-control" id="exampleName" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Адрес эл.почты</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword2">Пароль</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputCity">Город</label>
+                        <input type="text" class="form-control" id="exampleInputCity" placeholder="City">
+                    </div>
+                    <button type="submit" class="btn btn-info">Зарегистрироваться</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
