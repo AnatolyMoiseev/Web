@@ -13,6 +13,9 @@ require __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
 
 ////////////////
 
+$dbconn = pg_connect("host=localhost port=5432 dbname=carsdb user=admin password=12345")
+or die('Не удалось соединиться c субд: ' . pg_last_error());
+
 echo "<!DOCTYPE html>\n";
 echo "<html lang=\"en\">\n";
 echo "<head>\n";
@@ -219,4 +222,9 @@ echo "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/
 echo "<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\n";
 echo "</body>\n";
 echo "</html>\n";
+
+pg_close($dbconn);
+
 ?>
+
+
